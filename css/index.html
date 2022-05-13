@@ -6,28 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
     <style>
-        .MainParent {
-            background-color: blue;
-        }
-
-        .ParentColor {
-            color: yellow;
-        }
-
-        #Wrapper {
+        h1 {
+            background-image: url("1.jpg");
+            background-size: cover;
+            background-position: center;
             color: white;
+            width: 100%;
+            transition: all 1s linear;
+            height: 90vh;
+        }
+
+        h1:hover {
+            background-color: yellow;
+            color: blue;
+            /* width: 50%; */
+            transform: rotateY(180deg);
         }
     </style>
-
-
-    <div class="MainParent ParentColor" style="background-color: pink;" id="Wrapper Wrapper_2">
-        Main Div
-    </div>
+    <h1>
+        Hello
+    </h1>
 </body>
 
 </html>
