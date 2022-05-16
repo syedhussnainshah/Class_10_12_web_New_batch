@@ -10,26 +10,70 @@
 
 <body>
     <style>
-        h1 {
-            background-image: url("1.jpg");
-            background-size: cover;
-            background-position: center;
-            color: white;
-            width: 100%;
-            transition: all 1s linear;
-            height: 90vh;
+        * {
+            margin: 0;
+            padding: 0;
         }
 
-        h1:hover {
+        #head {
+            background-color: black;
+            color: wheat;
+            position: relative;
+        }
+
+        #head:hover {
+            background-color: blue;
+        }
+
+        #head::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 0%;
             background-color: yellow;
-            color: blue;
-            /* width: 50%; */
-            transform: rotateY(180deg);
+            transition: all 1s linear;
+
+
+        }
+
+        #head:hover::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            background-color: green;
+            transition: all 2s linear;
+
+
+        }
+        #head::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 0%;
+            background-color: pink;
+            transition: all 1s linear;
+            bottom: 0;left: 0;
+            border-radius: 50%;
+
+
+
+        }
+
+        #head:hover::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            background-color: brown;
+            transition: all 2s linear;
+            border-radius: 0%;
+            transform: rotate(360deg);
+
+
         }
     </style>
-    <h1>
-        Hello
-    </h1>
+    <h1 id="head">Hello</h1>
 </body>
 
 </html>
