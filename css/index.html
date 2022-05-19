@@ -10,41 +10,43 @@
 
 <body>
     <style>
-        ul {
-            display: flex;
-            flex-direction: row;
+        .animte{
             background-color: blue;
-            height: 40px;
-            justify-content: center;
-            align-items: center;
+            width: 100%;
+            height: 30vh;
+            animation: anim 3s infinite;
+            display: flex;justify-content: center;align-items: center;
         }
-
-        ul>li {
-            list-style: none;
-            background-color: black;
-            color: white;
-            padding: 10px 20px;
-            margin: 2px;
-        }
-
-        ul>li>ul {
-            display: none;
-        }
-
-        ul>li:hover>ul {
-            display: block;
+        @keyframes anim {
+            0%{
+                background-color: blue;
+                width: 100%;
+            }
+            25%{
+                background-color: yellow;
+                height: 50vh;
+                width: 80%;
+                transform: rotate(360deg);
+            }
+            50%{
+                background-color: brown;
+                border-radius: 50%;
+                width: 60%;
+            }
+            75%{
+                background-color: pink;
+                width: 40%;
+                height: 10vh;
+            }
+            100%{
+                background-color: black;
+                width: 20%;
+            }
         }
     </style>
-    <ul>
-        <li>Home</li>
-        <li>About
-            <ul>
-                <li>About 1</li>
-                <li>About 2</li>
-            </ul>
-        </li>
-        <li>Contact</li>
-    </ul>
+<div class="animte">
+hello
+</div>
 </body>
 
 </html>
