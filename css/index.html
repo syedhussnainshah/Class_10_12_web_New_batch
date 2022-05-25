@@ -9,44 +9,34 @@
 </head>
 
 <body>
-    <style>
-        .animte{
-            background-color: blue;
-            width: 100%;
-            height: 30vh;
-            animation: anim 3s infinite;
-            display: flex;justify-content: center;align-items: center;
-        }
-        @keyframes anim {
-            0%{
-                background-color: blue;
-                width: 100%;
-            }
-            25%{
-                background-color: yellow;
-                height: 50vh;
-                width: 80%;
-                transform: rotate(360deg);
-            }
-            50%{
-                background-color: brown;
-                border-radius: 50%;
-                width: 60%;
-            }
-            75%{
-                background-color: pink;
-                width: 40%;
-                height: 10vh;
-            }
-            100%{
-                background-color: black;
-                width: 20%;
-            }
-        }
+    <style> 
+    :root{
+        --bgColor: #d81414;
+        --pxforbtn: 10px 20px;
+        --white: #fff;
+    }
+    .MainDiv{
+        background-color: var(--white);
+        width: 100%;
+        height: 90vh;
+    }
+    h1{
+        color: var(--bgColor);
+    }
+    button{
+        background-color: var(--bgColor);
+        padding: var(--pxforbtn);
+        color: var(--white);
+    }
     </style>
-<div class="animte">
-hello
-</div>
+    <div class="MainDiv">
+
+    </div>
+    <h1>
+        Hello
+    </h1>
+    <button>Add Me </button>
+
 </body>
 
 </html>
