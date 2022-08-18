@@ -9,34 +9,49 @@
 </head>
 
 <body>
-    <style> 
-    :root{
-        --bgColor: #d81414;
-        --pxforbtn: 10px 20px;
-        --white: #fff;
-    }
-    .MainDiv{
-        background-color: var(--white);
-        width: 100%;
-        height: 90vh;
-    }
-    h1{
-        color: var(--bgColor);
-    }
-    button{
-        background-color: var(--bgColor);
-        padding: var(--pxforbtn);
-        color: var(--white);
-    }
+    <style>
+        .card {
+            height: 70vh;
+            width: 30%;
+            background-color: wheat;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            box-shadow: 5px 10px 10px black;
+        }
+
+
+        .card>.card-header {
+            height: 20%;
+            width: 100%;
+            background-color: lightgray;
+        }
+
+        .card>.card-body {
+            height: 60%;
+            width: 100%;
+            background-color: white;
+        }
+
+
+        .card>.card-footer {
+            height: 20%;
+            width: 100%;
+            background-color: lightgray;
+        }
     </style>
-    <div class="MainDiv">
+    <div class="card">
+        <div class="card-header">
+
+        </div>
+        <div class="card-body">
+
+        </div>
+        <div class="card-footer">
+
+        </div>
 
     </div>
-    <h1>
-        Hello
-    </h1>
-    <button>Add Me </button>
-
 </body>
 
 </html>
